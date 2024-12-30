@@ -30,12 +30,11 @@ function App() {
   const [pdfButtonStatus, setPdfButtonStatus] = useState('default');
   const [imageButtonStatus, setImageButtonStatus] = useState('default');
 
-  const API_URL = 'REACT_APP_API_URL_VAR';
 
-  const FILESERVER_UPLOAD_DOCX = `${API_URL}/upload-docx`;
-  const FILESERVER_CONFIRM = `${API_URL}/processar-cursos`;
-  const FILESERVER_UPLOAD_PDF = `${API_URL}/upload-pdf`;
-  const FILESERVER_UPLOAD_IMAGES = `${API_URL}/upload-images`;
+  const FILESERVER_UPLOAD_DOCX = `http://127.0.0.1:5000/upload-docx`;
+  const FILESERVER_CONFIRM = `http://127.0.0.1:5000/processar-cursos`;
+  const FILESERVER_UPLOAD_PDF = `http://127.0.0.1:5000/upload-pdf`;
+  const FILESERVER_UPLOAD_IMAGES = `http://127.0.0.1:5000/upload-images`;
 
 
   const handleFileImage = async (event: React.ChangeEvent<HTMLInputElement>) => {
